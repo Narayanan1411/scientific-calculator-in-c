@@ -1,0 +1,530 @@
+#include <stdio.h>
+#include<math.h>
+float tri()
+{
+  int x,a,z,b,function,value,value1,function1;
+  float radian, PI = 3.14159,c,d,q;
+  printf(" 1. Ratios \n 2. Addition \n 3. multiplication \n 4. subraction \n 5. division \n ENTER THE FUNCTION : ");
+  scanf("%d",&z);
+   switch (z)
+   {
+   case 1 :
+     printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+     printf("\nENTER THE FUCNTION : ");
+     scanf("%d",&x);
+	 if(x == 1 )
+	 {
+      printf("sin ");
+      scanf("%d",&a);
+      printf("sin(%d) = %f\n", a , sin( a * (PI / 180)));
+    }
+    else if(x == 2)
+	 {
+      printf("cos ");
+      scanf("%d",&a);
+       radian = a * (PI / 180.0);
+      printf("cos(%d) = %f\n", a , cos(radian));
+    }
+    else if(x == 3 )
+	{
+      printf("tan ");
+      scanf("%d",&a);
+       radian = a * (PI / 180.0);
+      printf("tan(%d) = %f\n", a , tan(radian));
+    }
+    else if(x == 4 )
+	{
+      printf("cot ");
+      scanf("%d",&a);
+       radian = a * (PI / 180.0);
+      printf("cot(%d) = %f\n", a , 1/tan(radian));
+    }
+    else if(x == 5 )
+	{
+      printf("cosec ");
+      scanf("%d",&a);
+       radian = a * (PI / 180.0);
+      printf("cosec(%d) = %f\n", a , 1/sin(radian));
+    }
+    else if(x == 6)
+	{
+      printf("sec ");
+      scanf("%d",&a);
+       radian = a * (PI / 180.0);
+      printf("sec(%d) = %f\n", a , 1/cos(radian));
+    }
+
+    case 2 :
+    	 printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :");
+     	scanf("%d",&function);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value);
+    if(function == 1)
+	{
+	    	c = sin(value * (PI / 180));
+	}
+	else 
+	  if( function == 2)
+		{
+			radian = value * (PI / 180);
+	    	c = cos(radian);
+		}
+    else	
+	  if( function == 3)
+		{
+			radian = value * (PI / 180);
+	    	c = tan(radian);
+		}
+	else
+	 if( function == 4)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/tan(radian);
+		}
+	else
+	 if(function == 5)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/sin(radian);
+		}
+	else
+    if(function == 6)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/cos(radian);
+		}
+		printf("value = %f",c);
+		
+		printf("+\n");
+		printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :\n");
+    	scanf("%d",&function1);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value1);
+    	
+    if(function == 1)
+	{
+	    	radian = value1 * (PI / 180);
+	    	d = sin(radian);
+	}
+	else if( function == 2)
+	{
+	
+		
+			radian = value1 * (PI / 180);
+	    	d = cos(radian);
+		}
+      else if( function == 3)
+		{
+			radian = value1 * (PI / 180);
+	    	d = tan(radian);
+		}
+	else if( function == 4)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/tan(radian);
+		}
+	else if(function == 5)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/sin(radian);
+		}
+	else if(function == 6)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/cos(radian);
+		}
+		printf("value = %f\n",d);
+
+    	return(c+d);
+    	
+ case 3 :
+    	 printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :");
+     	scanf("%d",&function);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value);
+    if(function == 1)
+	{
+	    	c = sin(value * (PI / 180));
+	}
+	else 
+	  if( function == 2)
+		{
+			radian = value * (PI / 180);
+	    	c = cos(radian);
+		}
+    else	
+	  if( function == 3)
+		{
+			radian = value * (PI / 180);
+	    	c = tan(radian);
+		}
+	else
+	 if( function == 4)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/tan(radian);
+		}
+	else
+	 if(function == 5)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/sin(radian);
+		}
+	else
+    if(function == 6)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/cos(radian);
+		}
+		printf("value = %f",c);
+		
+		printf("+\n");
+		printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :\n");
+    	scanf("%d",&function1);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value1);
+    	
+    if(function == 1)
+	{
+	    	radian = value1 * (PI / 180);
+	    	d = sin(radian);
+	}
+	else if( function == 2)
+	{
+	
+		
+			radian = value1 * (PI / 180);
+	    	d = cos(radian);
+		}
+      else if( function == 3)
+		{
+			radian = value1 * (PI / 180);
+	    	d = tan(radian);
+		}
+	else if( function == 4)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/tan(radian);
+		}
+	else if(function == 5)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/sin(radian);
+		}
+	else if(function == 6)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/cos(radian);
+		}
+		printf("value = %f\n",d);
+		return(c*d);
+
+
+ case 4 :
+    	 printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :");
+     	scanf("%d",&function);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value);
+    if(function == 1)
+	{
+	    	c = sin(value * (PI / 180));
+	}
+	else 
+	  if( function == 2)
+		{
+			radian = value * (PI / 180);
+	    	c = cos(radian);
+		}
+    else	
+	  if( function == 3)
+		{
+			radian = value * (PI / 180);
+	    	c = tan(radian);
+		}
+	else
+	 if( function == 4)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/tan(radian);
+		}
+	else
+	 if(function == 5)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/sin(radian);
+		}
+	else
+    if(function == 6)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/cos(radian);
+		}
+		printf("value = %f",c);
+		
+		printf("+\n");
+		printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :\n");
+    	scanf("%d",&function1);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value1);
+    	
+    if(function == 1)
+	{
+	    	radian = value1 * (PI / 180);
+	    	d = sin(radian);
+	}
+	else if( function == 2)
+	{
+	
+		
+			radian = value1 * (PI / 180);
+	    	d = cos(radian);
+		}
+      else if( function == 3)
+		{
+			radian = value1 * (PI / 180);
+	    	d = tan(radian);
+		}
+	else if( function == 4)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/tan(radian);
+		}
+	else if(function == 5)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/sin(radian);
+		}
+	else if(function == 6)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/cos(radian);
+		}
+		printf("value = %f\n",d);
+    	return(c-d);
+    	
+    	
+ case 5 :
+    	 printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :");
+     	scanf("%d",&function);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value);
+    if(function == 1)
+	{
+	    	c = sin(value * (PI / 180));
+	}
+	else 
+	  if( function == 2)
+		{
+			radian = value * (PI / 180);
+	    	c = cos(radian);
+		}
+    else	
+	  if( function == 3)
+		{
+			radian = value * (PI / 180);
+	    	c = tan(radian);
+		}
+	else
+	 if( function == 4)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/tan(radian);
+		}
+	else
+	 if(function == 5)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/sin(radian);
+		}
+	else
+    if(function == 6)
+		{
+			radian = value * (PI / 180);
+	    	c = 1/cos(radian);
+		}
+		printf("value = %f",c);
+		
+		printf("+\n");
+		printf("1.sin\n2.cos\n3.tan\n4.cot\n5.cosec\n6.sec");
+    	printf("\nEnter the function :\n");
+    	scanf("%d",&function1);
+    	printf("\nEnter the value :");
+    	scanf("%d",&value1);
+    	
+    if(function == 1)
+	{
+	    	radian = value1 * (PI / 180);
+	    	d = sin(radian);
+	}
+	else if( function == 2)
+	{
+	
+		
+			radian = value1 * (PI / 180);
+	    	d = cos(radian);
+		}
+      else if( function == 3)
+		{
+			radian = value1 * (PI / 180);
+	    	d = tan(radian);
+		}
+	else if( function == 4)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/tan(radian);
+		}
+	else if(function == 5)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/sin(radian);
+		}
+	else if(function == 6)
+		{
+			radian = value1 * (PI / 180);
+	    	d = 1/cos(radian);
+		}
+		printf("value = %f\n",d);
+    	return(c/d);
+}
+}
+
+
+float art()
+{
+    int  j,n,i,m;
+    float z;
+    struct {
+        float x;
+        char y;
+    }c[10];
+    printf("Number of terms: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the value of %dst value with its function: ",i+1);
+        scanf("%f%c",&c[i].x,&c[i].y);
+    }
+    n=n-1;
+    m=n;
+    for(i=0;i<=m;i++)
+    {
+        switch(c[0].y)
+        {
+            case '/':
+            {
+                z=c[0].x/c[1].x;
+                c[0].x=z;
+                c[0].y=c[1].y;
+				for(j=1;j<n;j++)
+				{
+					c[j].x=c[j+1].x;
+					c[j].y=c[j+1].y;
+				}
+				n=n-1;
+				break;
+                
+        }
+           case '*':
+            {
+                z=c[0].x*c[1].x;
+                c[0].x=z;
+                c[0].y=c[1].y;
+				for(j=1;j<n;j++)
+				{
+					c[j].x=c[j+1].x;
+					c[j].y=c[j+1].y;
+				}
+				n=n-1;
+				break;
+                
+            }
+               case '+':
+            {
+                z=c[0].x+c[1].x;
+                c[0].x=z;
+                c[0].y=c[1].y;
+				for(j=1;j<n;j++)
+				{
+					c[j].x=c[j+1].x;
+					c[j].y=c[j+1].y;
+				}
+				n=n-1;
+				break;
+                
+        }
+           case '-':
+            {
+                z=c[0].x-c[1].x;
+                c[0].x=z;
+                c[0].y=c[1].y;
+				for(j=1;j<n;j++)
+				{
+					c[j].x=c[j+1].x;
+					c[j].y=c[j+1].y;
+				}
+				n=n-1;
+				break;
+                
+        }
+        
+    }
+}
+    for(i=0;i<=n;i++)
+    {
+	
+    return(c[i].x);
+}
+}
+int main()
+{
+int m,k,i,x;
+float c[m];
+k=0;
+while(k!=9)
+{
+for(m=0;m<10;m++)
+{
+printf("Enter the type of value \n1:simple arithmatic calculation\n2:Trignometric \n3:history\n4:help\nENTER THE NUMBER: ");
+scanf("%d",&x);
+switch(x)
+{
+case 1:
+{
+c[m]=art();
+printf("Answer:%f\n",c[m]);
+break;
+}
+case 2:
+{              
+c[m]=tri();
+printf("Answer:%f",c[m]);
+break;
+}
+case 3:
+{
+for(i=0;i<m;i++)
+{
+printf("value %d:%f\n",i+1,c[i]);
+}
+break;
+}
+case 4:
+              {
+                           printf("YOU CAN DO ONE OPERATION AT THE TIME\n THAT IS YOU CAN DO TRIGNOMENTRY AND WITH THE USE OF THE HISTORY USE IT IN ARTHIMETIC OPERATION TO GET THE REQUIRED ANSWER\nHOPE IT HELPED\n");
+                           break;
+              }
+default:
+printf("Invalid");
+}
+}
+}
+return 0;
+}
+/* Code by Narayanan and Chaitanya*/
